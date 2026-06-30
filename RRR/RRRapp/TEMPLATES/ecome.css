@@ -32,6 +32,11 @@
     color: #ca1515;
 }
 
+.footer-col ul li a:hover{
+    padding-left: 8px;
+    transition: 0.5s;
+}
+
 .currency-menu {
     position: absolute;
     top: 40px;
