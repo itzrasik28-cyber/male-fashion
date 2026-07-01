@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Male Fashion</title>
-    <link rel="stylesheet" href="/RRR/css/all.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ecome.css' %}">
+    <link rel="stylesheet" href="{% static /RRR/webfonts/fa-brands-400.ttf %}">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' %}">
+    <!-- <link rel="stylesheet" href="/RRR/css/all.css">
     <link rel="stylesheet" href="/RRR/css/bootstrap.min.css">
     <link rel="stylesheet" href="/RRR/webfonts/fa-brands-400.ttf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./ecome.css">
+    <link rel="stylesheet" href="./ecome.css"> -->
 </head>
 
 <body>
@@ -29,22 +35,22 @@
                                     <a href="#" class="text-decoration-none sifa mx-3">Sign in</a>
                                     <a href="#" class="text-decoration-none sifa ">FAQs</a>
                                 </div>
-                                    <div class="dropdown">
-                                        <div class="currency-btn">
-                                            USD <i class="fa-solid fa-angle-down"></i>
-                                        </div>
-
-                                        <ul class="currency-menu">
-                                            <li><a href="#">USD</a></li>
-                                            <li><a href="#">EUR</a></li>
-                                            <li><a href="#">INR</a></li>
-                                        </ul>
+                                <div class="dropdown">
+                                    <div class="currency-btn">
+                                        USD <i class="fa-solid fa-angle-down"></i>
                                     </div>
+
+                                    <ul class="currency-menu">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">INR</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="container">
                 <div class="row  rosw d-flex">
@@ -74,10 +80,13 @@
 
                                     <ul class="submenu list-unstyled">
                                         <li><a href="ecoaoutus.html" class="text-decoration-none">About Us</a></li>
-                                        <li><a href="ecoshopdetile.html" class="text-decoration-none">Shop Details</a></li>
-                                        <li><a href="ecoshoppingcard.html" class="text-decoration-none">Shopping Cart</a></li>
+                                        <li><a href="ecoshopdetile.html" class="text-decoration-none">Shop Details</a>
+                                        </li>
+                                        <li><a href="ecoshoppingcard.html" class="text-decoration-none">Shopping
+                                                Cart</a></li>
                                         <li><a href="checkaout.html" class="text-decoration-none">Checkout</a></li>
-                                        <li><a href="blogdtailes.html" class="text-decoration-none">Blog Details</a></li>
+                                        <li><a href="blogdtailes.html" class="text-decoration-none">Blog Details</a>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -770,20 +779,20 @@
     <!-- heder menu -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<script>
-$(document).ready(function () {
+    <script>
+        $(document).ready(function () {
 
-    $(".currency-btn").click(function (e) {
-        e.stopPropagation();
-        $(".currency-menu").slideToggle(300);
-    });
+            $(".currency-btn").click(function (e) {
+                e.stopPropagation();
+                $(".currency-menu").slideToggle(300);
+            });
 
-    $(document).click(function () {
-        $(".currency-menu").slideUp(300);
-    });
+            $(document).click(function () {
+                $(".currency-menu").slideUp(300);
+            });
 
-});
-</script>
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
