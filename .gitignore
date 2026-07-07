@@ -1,0 +1,15 @@
+# Render build directory
+RRR/dist/
+
+# Python / Django files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+staticfiles/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
