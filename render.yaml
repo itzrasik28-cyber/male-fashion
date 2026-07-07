@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: male-fashion-frontend
+    runtime: static
+    rootDir: RRR
+    buildCommand: bash deploy.sh
+    publishPath: dist
